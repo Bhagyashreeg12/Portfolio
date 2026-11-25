@@ -3,7 +3,7 @@
 > **Personal Portfolio & Case Studies | Data Analyst & Machine Learning Practitioner**  
 > *Transforming complex data into decisive business insights using Python, SQL, Power BI, Advanced Excel, Predictive Modeling, and Business Intelligence Automation.*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://bhagyashreeg12.github.io/Portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://portfolio-theta-eosin-x57ayhv2ya.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/bhagyashreeg4/)
 [![GitHub](https://img.shields.io/badge/GitHub-Bhagyashreeg12-black)](https://github.com/Bhagyashreeg12)
 
