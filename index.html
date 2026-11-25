@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagyashree Ghosh | Data Analyst & Machine Learning Practitioner</title>
+  <meta name="description" content="Portfolio of Bhagyashree Ghosh — Data Analyst & ML Practitioner specializing in Python, SQL, Power BI, Advanced Excel, Predictive Modeling, and Business Intelligence Automation.">
+  <meta name="keywords" content="Bhagyashree Ghosh, Data Analyst, Machine Learning, Python, SQL, Power BI, MIS Automation, Data Science Portfolio">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= Navigation Bar ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="nav-logo-icon">BG</div>
+        <span>Bhagyashree<span class="gradient-text">.data</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#simulator" class="nav-link">ML Simulator</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="themeIcon"></span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= Hero Section ================= -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Data Analyst & ML Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Transforming Complex Data into <span class="gradient-text">Decisive Insights</span>.
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>I'm Bhagyashree Ghosh, a</span>
+            <span id="typedRole" class="typed-role">Data Analyst</span>
+          </div>
+
+          <p class="hero-bio">
+            Blending an academic background in <strong>English</strong> (critical analysis, structured expression, stakeholder storytelling) with a <strong>Post Graduate in Analytics</strong> (Python, SQL, Power BI, Machine Learning & Automation). I turn noisy, disparate datasets into executive-ready dashboards, predictive models, and self-operating MIS workflows.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Get in Touch
+            </a>
+            <button class="btn btn-secondary copy-email-trigger" title="Copy Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Email
+            </button>
+          </div>
+
+          <!-- Live Stats Row -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <div class="stat-number counter-val" data-target="7" data-suffix="+">0</div>
+              <div class="stat-label">End-to-End Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number counter-val" data-target="320" data-suffix="K+">0</div>
+              <div class="stat-label">Records Analyzed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number counter-val" data-target="85" data-suffix="%">0</div>
+              <div class="stat-label">Fraud ML Recall</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number counter-val" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label">Automated Accuracy</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-card">
+            <div class="avatar-container">
+              <div class="avatar-inner">
+                <img src="assets/images/profile.jpg" alt="Bhagyashree Ghosh" class="profile-img">
+              </div>
+            </div>
+
+            <h3 class="hero-card-name">Bhagyashree Ghosh</h3>
+            <p class="hero-card-role">Data Analyst & ML Practitioner</p>
+
+            <div class="hero-badges-list">
+              <span class="badge-tag">📍 Pune, India</span>
+              <span class="badge-tag">🎓 PGA Data Science</span>
+              <span class="badge-tag">✍️ BA English Honors</span>
+            </div>
+
+            <div class="hero-social-links">
+              <a href="https://www.linkedin.com/in/bhagyashreeg4/" target="_blank" rel="noopener" class="social-circle-btn" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="https://github.com/Bhagyashreeg12" target="_blank" rel="noopener" class="social-circle-btn" title="GitHub Repositories">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="mailto:bhagyashreeghosh004@gmail.com" class="social-circle-btn" title="Direct Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Floating Metric Pills -->
+            <div class="floating-metric-card pill-left">
+              <div class="metric-icon-box icon-emerald">⚡</div>
+              <div class="metric-text-box">
+                <h5>MIS Automation</h5>
+                <span>12 Branches in 1 Click</span>
+              </div>
+            </div>
+
+            <div class="floating-metric-card pill-right">
+              <div class="metric-icon-box icon-cyan">🎯</div>
+              <div class="metric-text-box">
+                <h5>89% Precision</h5>
+                <span>Card Fraud Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About Section ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">The Intersection of <span class="gradient-text">Storytelling & Analytics</span></h2>
+          <p class="section-subtitle">
+            Most data projects fail not at the algorithm, but at the communication layer. My dual background bridges technical rigor with executive clarity.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I hold a <strong>Bachelor's degree in English</strong>, which built a permanent foundation in critical thinking, structured logic, and articulation. During my studies, I discovered a fascination with how mathematical evidence and data patterns solve high-stakes business challenges.
+            </p>
+            <p>
+              To formalize this passion, I completed the intensive <strong>Post Graduate in Analytics (PGA)</strong> program, mastering Python, SQL, Power BI, Advanced Excel formulas, and Machine Learning algorithms. 
+            </p>
+            <p>
+              In addition, my year of teaching and mentorship with an <strong>educational NGO</strong> sharpened my ability to distill complex analytical architectures into intuitive, punchy takeaways that non-technical leaders immediately understand and act upon.
+            </p>
+
+            <div class="about-highlight-box">
+              <h4>🎯 What I Bring to Your Team</h4>
+              <p>
+                From diagnosing raw CSV inconsistencies with automated Data Quality Gates to training fine-tuned classification models and designing executive Power BI dashboards, I deliver reliable, reproducible business outcomes.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box icon-cyan">📊</div>
+              <div class="feature-content">
+                <h4>End-to-End Data Pipelines</h4>
+                <p>From messy CSV ingestion, SQL querying, and automated data quality audits to live formula-driven Excel workbooks and reports.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box icon-purple">🤖</div>
+              <div class="feature-content">
+                <h4>Practical Machine Learning</h4>
+                <p>Solving real-world constraints: severe class imbalance (SMOTE), threshold optimization, clustering (K-Means/PCA), and Time Series forecasting (SARIMA/LSTM).</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box icon-emerald">🗣️</div>
+              <div class="feature-content">
+                <h4>Executive Communication</h4>
+                <p>Clear documentation, automated email digests, and interactive dashboards that translate statistical variance into bottom-line business decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Skills Section ================= -->
+    <section id="skills" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skillset & Tools</span></h2>
+          <p class="section-subtitle">A balanced toolkit designed for full-lifecycle data analytics, machine learning, and business intelligence.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Python -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #38bdf8;">🐍</div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-name">Python for Data Science</h3>
+            <p class="skill-desc">Data wrangling, automated scripts, custom ETL pipelines, statistical modeling, and ML workflows.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">Pandas</span>
+              <span class="skill-tag-pill">NumPy</span>
+              <span class="skill-tag-pill">Scikit-Learn</span>
+              <span class="skill-tag-pill">Openpyxl</span>
+              <span class="skill-tag-pill">XGBoost</span>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #f59e0b;">🗄️</div>
+              <span class="skill-level-badge">Proficient</span>
+            </div>
+            <h3 class="skill-name">SQL & Databases</h3>
+            <p class="skill-desc">Relational schema design, complex multi-table joins, CTEs, window functions, and aggregation pivots.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">PostgreSQL</span>
+              <span class="skill-tag-pill">MySQL</span>
+              <span class="skill-tag-pill">SQLite</span>
+              <span class="skill-tag-pill">Window Functions</span>
+              <span class="skill-tag-pill">CTEs</span>
+            </div>
+          </div>
+
+          <!-- Power BI & Tableau -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #eab308;">📈</div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-name">Power BI & Visualization</h3>
+            <p class="skill-desc">Executive BI reporting, interactive cross-filtering, DAX measures, data modeling, and spatial heatmaps.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">Power BI</span>
+              <span class="skill-tag-pill">DAX</span>
+              <span class="skill-tag-pill">Tableau</span>
+              <span class="skill-tag-pill">Matplotlib</span>
+              <span class="skill-tag-pill">Seaborn</span>
+            </div>
+          </div>
+
+          <!-- Advanced Excel -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #10b981;">📑</div>
+              <span class="skill-level-badge">Expert</span>
+            </div>
+            <h3 class="skill-name">Advanced MS Excel</h3>
+            <p class="skill-desc">Dynamic multi-sheet formula architectures that recalculate automatically on new data ingestion.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">SUMIFS / COUNTIFS</span>
+              <span class="skill-tag-pill">INDEX / MATCH</span>
+              <span class="skill-tag-pill">VLOOKUP</span>
+              <span class="skill-tag-pill">PivotTables</span>
+              <span class="skill-tag-pill">Conditional Rules</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #8b5cf6;">🧠</div>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <h3 class="skill-name">Machine Learning</h3>
+            <p class="skill-desc">Supervised and unsupervised algorithms, class imbalance handling, threshold tuning, and feature importance.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">Random Forest</span>
+              <span class="skill-tag-pill">Gradient Boosting</span>
+              <span class="skill-tag-pill">K-Means</span>
+              <span class="skill-tag-pill">PCA</span>
+              <span class="skill-tag-pill">SMOTE</span>
+            </div>
+          </div>
+
+          <!-- Time Series & DL -->
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" style="color: #06b6d4;">⏳</div>
+              <span class="skill-level-badge">Specialized</span>
+            </div>
+            <h3 class="skill-name">Time Series & Deep Learning</h3>
+            <p class="skill-desc">Temporal lag engineering, seasonality decomposition, moving averages, and recurrent networks.</p>
+            <div class="skill-tags">
+              <span class="skill-tag-pill">SARIMA</span>
+              <span class="skill-tag-pill">LSTM</span>
+              <span class="skill-tag-pill">Lag Features</span>
+              <span class="skill-tag-pill">Rolling Windows</span>
+              <span class="skill-tag-pill">Keras/TF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Featured Projects ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Case Studies & Projects</span></h2>
+          <p class="section-subtitle">Real-world analytics pipelines engineered with clean code, robust validations, and proven business metrics.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="bi">Data Analytics & BI</button>
+          <button class="filter-btn" data-filter="automation">Automation & MIS</button>
+          <button class="filter-btn" data-filter="timeseries">Time Series</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 1. BranchPulse MIS -->
+          <div class="project-card" data-category="automation bi">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/branchpulse_dashboard.png" alt="BranchPulse Dashboard" class="project-thumb">
+              <span class="project-category-badge">Automation & MIS</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BranchPulse: Branch MIS Automation System</h3>
+              <p class="project-desc">
+                Automated Monday-morning MIS reporting pack across 12 insurance branches with dynamic Excel formulas, automated Data Quality Gate (76 audit issues handled), and executive email generation in one command.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>12 Branches Automated</strong>
+                <span>• 100% Formula Driven • 0 Manual Copy-Paste</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">SQLite</span>
+                <span class="tech-chip">Advanced Excel</span>
+                <span class="tech-chip">Openpyxl</span>
+                <span class="tech-chip">HTML Digest</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="branchpulse">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub/BranchPluse-MIS" target="_blank" rel="noopener" class="link-btn" title="GitHub Repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Fraud Detection -->
+          <div class="project-card" data-category="ml">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/fraud_model_comparison.png" alt="Fraud Detection Curves" class="project-thumb">
+              <span class="project-category-badge">Machine Learning</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Card Fraud Detection ML Pipeline</h3>
+              <p class="project-desc">
+                Trained Random Forest and Gradient Boosting models on a 1.5% imbalanced fraud dataset. Optimized precision-recall threshold curve to achieve 85% fraud capture with only 0.16% false positive rate.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>85% Recall / 89% Precision</strong>
+                <span>• PR-AUC: 0.810</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-Learn</span>
+                <span class="tech-chip">Random Forest</span>
+                <span class="tech-chip">SMOTE</span>
+                <span class="tech-chip">Threshold Sweep</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="fraud">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub/Fraud_Detection_System" target="_blank" rel="noopener" class="link-btn" title="GitHub Repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Customer Segmentation -->
+          <div class="project-card" data-category="ml bi">
+            <div class="project-thumb-wrap">
+              <img src="assets/images/customer_pca_clusters.png" alt="Customer Clusters PCA" class="project-thumb">
+              <span class="project-category-badge">Clustering & Analytics</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Customer Segmentation & Behavioral RFM</h3>
+              <p class="project-desc">
+                Segmented 3,000 customers into 4 distinct commercial personas using K-Means clustering, PCA dimensionality reduction, and Elbow/Silhouette analysis to guide targeted marketing retention.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>4 Actionable Personas</strong>
+                <span>• Silhouette Score: 0.62</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">K-Means</span>
+                <span class="tech-chip">PCA</span>
+                <span class="tech-chip">Hierarchical</span>
+                <span class="tech-chip">Seaborn</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="segmentation">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub/Customer_Segmentation" target="_blank" rel="noopener" class="link-btn" title="GitHub Repo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. EV Charging Demand -->
+          <div class="project-card" data-category="timeseries ml">
+            <div class="project-thumb-wrap" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);">
+              <div style="font-size: 3rem;">⚡🚗</div>
+              <span class="project-category-badge">Time Series & DL</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EV Charging Demand Forecasting</h3>
+              <p class="project-desc">
+                Spatial-temporal forecasting of EV charging demand across 4 operational zones using 365 days of data. Engineered rolling and lag features to compare SARIMA, Random Forest, XGBoost, and LSTM neural networks.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>4 Grid Zones Forecasted</strong>
+                <span>• 365-Day Time Series • Hybrid DL</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">SARIMA</span>
+                <span class="tech-chip">LSTM</span>
+                <span class="tech-chip">XGBoost</span>
+                <span class="tech-chip">Lag Engineering</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="evcharging">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub" target="_blank" rel="noopener" class="link-btn" title="GitHub Repo">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Crime Rate Prediction -->
+          <div class="project-card" data-category="bi ml">
+            <div class="project-thumb-wrap" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+              <div style="font-size: 3rem;">🗺️📍</div>
+              <span class="project-category-badge">BI & Spatial Analytics</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Chicago Crime Prediction & Power BI Dashboard</h3>
+              <p class="project-desc">
+                Capstone analytics platform evaluating citywide historical incident logs to predict temporal-spatial crime frequency and deploy an interactive multi-view Power BI dashboard for proactive public safety dispatch.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>Power BI Interactive Dashboard</strong>
+                <span>• Spatial Risk Heatmaps</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Power BI</span>
+                <span class="tech-chip">DAX</span>
+                <span class="tech-chip">Tableau</span>
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Spatial Analytics</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="crime">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub" target="_blank" rel="noopener" class="link-btn">
+                  <span>Details</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Heart Disease Prediction -->
+          <div class="project-card" data-category="ml">
+            <div class="project-thumb-wrap" style="background: linear-gradient(135deg, #4c0519 0%, #881337 100%);">
+              <div style="font-size: 3rem;">🫀🩺</div>
+              <span class="project-category-badge">Healthcare ML</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Heart Disease Clinical Risk Scoring</h3>
+              <p class="project-desc">
+                Supervised classification model trained on 319,795 CDC BRFSS patient records to estimate heart disease risk across 18 demographic and lifestyle predictors using Logistic Regression (LBFGS) with odds-ratio analysis.
+              </p>
+              <div class="project-kpi-pill">
+                <strong>319,795 Patient Records</strong>
+                <span>• Interpretable Odds Ratios</span>
+              </div>
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Logistic Regression</span>
+                <span class="tech-chip">ROC-AUC</span>
+                <span class="tech-chip">Feature Importance</span>
+              </div>
+              <div class="project-footer">
+                <button class="link-btn open-modal-btn" data-project="heart">
+                  <span>View Case Study</span> →
+                </button>
+                <a href="https://github.com/bhagyashreeghosh004-hub" target="_blank" rel="noopener" class="link-btn">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Interactive ML Simulator ================= -->
+    <section id="simulator" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Demo</span>
+          <h2 class="section-title">Live ML <span class="gradient-text">Decision Threshold Simulator</span></h2>
+          <p class="section-subtitle">
+            Experience how adjusting the classification probability threshold directly shifts business trade-offs between catching fraud and minimizing customer friction.
+          </p>
+        </div>
+
+        <div class="simulator-box">
+          <div class="sim-header">
+            <h3>Fraud Model Decision Optimizer</h3>
+            <p>Based on our 60,000 transaction dataset (229 actual fraud cases in test set)</p>
+          </div>
+
+          <div class="slider-container">
+            <div class="slider-labels">
+              <span>Decision Threshold Probability ($P_{cut}$)</span>
+              <span id="thresholdVal" class="slider-val-badge">0.42</span>
+            </div>
+            <input type="range" id="thresholdSlider" class="range-slider" min="0.10" max="0.90" step="0.02" value="0.42">
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
+              <span>0.10 (Aggressive Recall)</span>
+              <span>0.42 (Tuned Optimum)</span>
+              <span>0.90 (High Precision)</span>
+            </div>
+          </div>
+
+          <div class="sim-metrics-grid">
+            <div class="sim-metric-card">
+              <div id="simCaught" class="sim-val">195 / 229</div>
+              <div class="sim-label">Fraud Cases Caught</div>
+            </div>
+            <div class="sim-metric-card">
+              <div id="simRecall" class="sim-val">85%</div>
+              <div class="sim-label">Recall Rate</div>
+            </div>
+            <div class="sim-metric-card">
+              <div id="simPrecision" class="sim-val">89%</div>
+              <div class="sim-label">Precision Rate</div>
+            </div>
+            <div class="sim-metric-card">
+              <div id="simF1" class="sim-val">0.87</div>
+              <div class="sim-label">F1-Score</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; text-align: center; font-size: 0.9rem;" id="simTradeoffMsg">
+            <span style="color: var(--accent-emerald);">Optimal Business Equilibrium:</span> Balances high fraud capture (85%) with minimal false alarms (0.16%).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Career Journey & Education ================= -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trajectory</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Experience Journey</span></h2>
+          <p class="section-subtitle">How a passion for language and structured logic evolved into high-performance data analytics.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1: Post Graduate Analytics -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">2024 — Present</div>
+              <h3 class="timeline-role">Post Graduate in Analytics (PGA)</h3>
+              <div class="timeline-org">Specialization in Data Science, Machine Learning & BI</div>
+              <p class="timeline-desc">
+                Comprehensive training and project defense in end-to-end analytics pipelines, predictive modeling, SQL database querying, Power BI dashboard architecture, and time-series forecasting. Successfully delivered Capstone 1 (Chicago Crime Spatial Analysis) and Capstone 2 (EV Demand Forecasting).
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Teaching & Mentorship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">2023 — 2024</div>
+              <h3 class="timeline-role">Educator & Community Mentor</h3>
+              <div class="timeline-org">Educational NGO Collaboration</div>
+              <p class="timeline-desc">
+                Facilitated learning modules, breaking down complex conceptual frameworks into accessible, intuitive lessons. Cultivated advanced stakeholder presentation, patience, and empathetic communication—skills that directly elevate technical business intelligence delivery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: English Honors -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">2020 — 2023</div>
+              <h3 class="timeline-role">Bachelor of Arts (Honors) in English</h3>
+              <div class="timeline-org">Foundational Academic Degree</div>
+              <p class="timeline-desc">
+                Developed exceptional verbal and written articulation, argument structure, rhetorical analysis, and critical reading of intricate texts. This background provides an uncommon advantage in distilling quantitative models into persuasive executive narratives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Achievements ================= -->
+    <section id="achievements" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Recognitions & <span class="gradient-text">Key Achievements</span></h2>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achieve-icon-wrap">🏆</div>
+            <div class="achieve-content">
+              <h4>Dual Capstone Defense</h4>
+              <p>Successfully researched and defended two end-to-end enterprise capstones spanning Power BI spatial analytics and EV demand hybrid forecasting.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon-wrap">🛡️</div>
+            <div class="achieve-content">
+              <h4>High-Imbalance ML Precision</h4>
+              <p>Engineered an 89% precision fraud detection model with 85% recall on a severe 1.5% fraud distribution without test data leakage.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon-wrap">⚡</div>
+            <div class="achieve-content">
+              <h4>76+ Automated Quality Gates</h4>
+              <p>Designed and deployed automated reconciliation rules and audit trails across multi-branch insurance operations.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achieve-icon-wrap">🤝</div>
+            <div class="achieve-content">
+              <h4>1+ Year NGO Mentorship</h4>
+              <p>Recognized for educational impact and teaching clarity, translating difficult concepts into easy-to-grasp insights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact Section ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Discuss <span class="gradient-text">Opportunities</span></h2>
+          <p class="section-subtitle">
+            Whether you have an open Data Analyst or ML role, a data project, or just want to connect, my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="contact-icon-box">✉️</div>
+              <div class="contact-text-box">
+                <h5>Email Address</h5>
+                <a href="mailto:bhagyashreeghosh004@gmail.com">bhagyashreeghosh004@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card-item">
+              <div class="contact-icon-box">💼</div>
+              <div class="contact-text-box">
+                <h5>LinkedIn Profile</h5>
+                <a href="https://www.linkedin.com/in/bhagyashreeg4/" target="_blank" rel="noopener">linkedin.com/in/bhagyashreeg4</a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card-item">
+              <div class="contact-icon-box">🐙</div>
+              <div class="contact-text-box">
+                <h5>GitHub Profile</h5>
+                <a href="https://github.com/Bhagyashreeg12" target="_blank" rel="noopener">github.com/Bhagyashreeg12</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card-item">
+              <div class="contact-icon-box">📍</div>
+              <div class="contact-text-box">
+                <h5>Location & Availability</h5>
+                <span>Pune, Maharashtra, India (Open to Remote, Hybrid & Relocation)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <form id="portfolioContactForm">
+              <div class="form-group">
+                <label for="formName">Your Name</label>
+                <input type="text" id="formName" class="form-control" placeholder="e.g. Hiring Manager / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail">Your Email</label>
+                <input type="email" id="formEmail" class="form-control" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject">Subject</label>
+                <input type="text" id="formSubject" class="form-control" placeholder="Data Analyst Role / Project Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-control" placeholder="Hello Bhagyashree, we would love to speak with you regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message
+              </button>
+
+              <div id="formStatusMsg"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="nav-brand">
+        <div class="nav-logo-icon">BG</div>
+        <span>Bhagyashree<span class="gradient-text">.data</span></span>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/bhagyashreeg4/" target="_blank" rel="noopener" class="social-circle-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/Bhagyashreeg12" target="_blank" rel="noopener" class="social-circle-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:bhagyashreeghosh004@gmail.com" class="social-circle-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 Bhagyashree Ghosh. All rights reserved. Designed with precision for high-impact analytics.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= Case Study Modal ================= -->
+  <div id="caseStudyModal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Project Case Study</h3>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <div id="modalDynamicContent" class="modal-body">
+        <!-- Loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Toast Notification ================= -->
+  <div id="toastNotice" class="toast-notice">
+    <span style="font-size: 1.2rem;">📋</span>
+    <span class="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
