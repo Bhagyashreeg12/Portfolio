@@ -1,0 +1,131 @@
+.footer-section {
+  max-width: var(--container-max);
+  width: 100%;
+  margin: 64px auto 0;
+  padding: 0 var(--container-padding) 36px;
+}
+
+.footer-container {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-quote {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-quote-author {
+  font-style: normal;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: var(--border-subtle);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-made-by {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+
+.footer-made-by strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.footer-heart-icon {
+  color: var(--accent-red);
+  font-size: 16px;
+  animation: heart-beat 2s infinite;
+  transition: color var(--duration-fast) ease, filter var(--duration-fast) ease;
+}
+
+.footer-heart-icon:hover {
+  color: rgb(190, 29, 29);
+  filter: drop-shadow(0 0 6px #e63946aa);
+}
+
+.footer-copyright {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.footer-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+}
+
+.footer-clock-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  background-color: var(--status-active);
+  box-shadow: 0 0 8px var(--status-active-glow);
+  animation: pulse-dot 1.4s infinite;
+}
+
+@media (max-width: 700px) {
+  .footer-section {
+    padding: 0 var(--container-padding-md) 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-quote {
+    text-align: left;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-section {
+    padding: 0 var(--container-padding-sm) 28px;
+  }
+
+  .footer-heart-icon {
+    font-size: 14px;
+  }
+}

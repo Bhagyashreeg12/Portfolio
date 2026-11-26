@@ -1,0 +1,60 @@
+.not-found-section {
+  max-width: var(--container-max);
+  margin: 48px auto 0;
+  padding: 0 var(--container-padding);
+}
+
+.not-found-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.not-found-code {
+  font-family: var(--font-mono);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  text-shadow: 0 0 28px rgba(59, 130, 246, 0.35);
+}
+
+.not-found-heading {
+  font-family: var(--font-ui);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.not-found-desc {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .not-found-code {
+    font-size: 4rem;
+  }
+
+  .not-found-heading {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .not-found-code {
+    font-size: 3.5rem;
+  }
+}

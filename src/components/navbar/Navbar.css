@@ -1,0 +1,133 @@
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(11, 13, 14, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 12px var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Nav Links - Single line without wrapping */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-links li {
+  flex-shrink: 0;
+}
+
+.navbar-link {
+  font-family: var(--font-ui);
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #a1a1aa;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.navbar-link.active {
+  color: #ffffff;
+  background-color: #1e2025;
+}
+
+/* Star GitHub Pill */
+.navbar-star-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #16171a;
+  border: 1px solid #323339;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+.navbar-star-pill:hover {
+  border-color: #555761;
+  background-color: #202227;
+  transform: translateY(-1px);
+}
+
+.navbar-star-icon {
+  color: #f59e0b;
+  font-size: 0.9em;
+}
+
+.navbar-github-icon {
+  color: #a1a1aa;
+  font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .navbar-inner {
+    padding: 10px var(--container-padding-md);
+    gap: 10px;
+  }
+
+  .navbar-link {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .navbar-star-pill {
+    padding: 5px 10px;
+  }
+
+  .navbar-star-text {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar-inner {
+    padding: 8px var(--container-padding-sm);
+  }
+
+  .navbar-link {
+    font-size: 0.76rem;
+    padding: 4px 6px;
+  }
+}

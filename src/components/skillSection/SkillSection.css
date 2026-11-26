@@ -1,0 +1,117 @@
+.skills-marquee-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: hidden;
+}
+
+.skills-row-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills-row-label {
+  padding: 0 20px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.marquee-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee-track.marquee-reverse {
+  animation: marquee-reverse 60s linear infinite;
+}
+
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-default);
+  background-color: var(--bg-surface-subtle);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: border-color var(--duration-fast) ease, background-color var(--duration-fast) ease,
+    transform var(--duration-fast) ease;
+}
+
+.skill-pill:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-surface-elevated);
+  transform: translateY(-1px);
+}
+
+.skill-pill-icon {
+  font-size: 1.2em;
+  flex-shrink: 0;
+}
+
+.skill-pill-name {
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+  .skill-pill-icon {
+    font-size: 1em;
+  }
+
+  .skill-pill-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .skill-pill {
+    padding: 5px 12px;
+    gap: 6px;
+  }
+
+  .skill-pill-icon {
+    font-size: 0.9em;
+  }
+
+  .skill-pill-name {
+    font-size: 0.76rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .skill-pill-icon {
+    font-size: 0.8em;
+  }
+
+  .skill-pill-name {
+    font-size: 0.72rem;
+  }
+}

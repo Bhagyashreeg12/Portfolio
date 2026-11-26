@@ -1,7 +1,10 @@
 param([int]$Port = 5500)
 
-$root = $PSScriptRoot
-if (-not $root) { $root = "F:\Portfolio" }
+$root = Join-Path $PSScriptRoot "dist"
+if (-not (Test-Path -Path $root -PathType Container)) {
+    Write-Error "Build output directory '$root' not found. Run 'npm run build' first."
+    exit 1
+}
 
 $listener = New-Object System.Net.HttpListener
 $prefix = "http://localhost:$Port/"
@@ -10,26 +13,29 @@ $listener.Prefixes.Add($prefix)
 try {
     $listener.Start()
     Write-Output "Server running at $prefix"
-    Write-Output "Serving files from $root"
+    Write-Output "Serving built files from $root"
 } catch {
     Write-Error "Failed to start listener on $prefix : $_"
     exit 1
 }
 
 $mimeTypes = @{
-    ".html" = "text/html; charset=utf-8"
-    ".htm"  = "text/html; charset=utf-8"
-    ".css"  = "text/css; charset=utf-8"
-    ".js"   = "application/javascript; charset=utf-8"
-    ".json" = "application/json; charset=utf-8"
-    ".png"  = "image/png"
-    ".jpg"  = "image/jpeg"
-    ".jpeg" = "image/jpeg"
-    ".gif"  = "image/gif"
-    ".svg"  = "image/svg+xml"
-    ".ico"  = "image/x-icon"
-    ".pdf"  = "application/pdf"
-    ".txt"  = "text/plain; charset=utf-8"
+    ".html"  = "text/html; charset=utf-8"
+    ".htm"   = "text/html; charset=utf-8"
+    ".css"   = "text/css; charset=utf-8"
+    ".js"    = "application/javascript; charset=utf-8"
+    ".mjs"   = "application/javascript; charset=utf-8"
+    ".json"  = "application/json; charset=utf-8"
+    ".png"   = "image/png"
+    ".jpg"   = "image/jpeg"
+    ".jpeg"  = "image/jpeg"
+    ".gif"   = "image/gif"
+    ".svg"   = "image/svg+xml"
+    ".webp"  = "image/webp"
+    ".woff2" = "font/woff2"
+    ".ico"   = "image/x-icon"
+    ".pdf"   = "application/pdf"
+    ".txt"   = "text/plain; charset=utf-8"
 }
 
 while ($listener.IsListening) {
@@ -45,6 +51,13 @@ while ($listener.IsListening) {
 
         $relPath = $urlPath.TrimStart("/").Replace("/", "\")
         $filePath = Join-Path $root $relPath
+
+        # SPA fallback to dist/index.html for client-side routes without file extensions
+        if (-not (Test-Path -Path $filePath -PathType Leaf)) {
+            if (-not [System.IO.Path]::GetExtension($filePath)) {
+                $filePath = Join-Path $root "index.html"
+            }
+        }
 
         if (Test-Path -Path $filePath -PathType Leaf) {
             $ext = [System.IO.Path]::GetExtension($filePath).ToLower()
