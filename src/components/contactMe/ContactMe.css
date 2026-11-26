@@ -1,0 +1,130 @@
+.contact-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-heading {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-desc {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.contact-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.contact-primary-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.contact-link-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--duration-fast) ease, background-color var(--duration-fast) ease,
+    transform var(--duration-fast) ease;
+  min-width: 0;
+}
+
+.contact-link-tile:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-surface-elevated);
+  transform: translateY(-1px);
+}
+
+.contact-tile-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.contact-tile-icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.contact-tile-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contact-tile-name {
+  font-family: var(--font-ui);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-tile-handle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-tile-arrow {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  transition: transform var(--duration-fast) ease, color var(--duration-fast) ease;
+}
+
+.contact-link-tile:hover .contact-tile-arrow {
+  transform: translate(2px, -2px);
+  color: var(--text-primary);
+}
+
+@media (max-width: 640px) {
+  .contact-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-card {
+    padding: 18px;
+  }
+}
